@@ -1,6 +1,6 @@
 <?php
 
-namespace GHITest\Login;
+namespace GHItests\Login;
 
 use PHPUnit\Framework\TestCase;
 use GHI\Login\Organizacao;
@@ -31,6 +31,7 @@ class OrganizacaoTest extends TestCase
         
         $this->assertEquals('Bosch',$empresa->nome);
         $this->assertStringContainsString('@bosch',$empresa->email);
+        $this->assertIsString($empresa->nome);
 
 
     }
