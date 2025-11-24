@@ -1,12 +1,12 @@
 <?php
 
-namespace GHI\Materia;
+namespace GHI\Horario;
 
 class Materia{
 
-    private $nome:string;
+    public string $nome;
 
-    public function inserirnatabela(tabela):bool {
+    public function inserirnatabela($tabela):bool {
         return 1;
     }
 }
