@@ -1,6 +1,6 @@
 <?php
 
-namespace GHITest\Login;
+namespace GHItests\Horario;
 
 use PHPUnit\Framework\TestCase;
 use GHI\Horario\Aula;
@@ -22,6 +22,7 @@ class Aulatest extends TestCase
         $this->assertEquals('18:10',$Aula->horariodefim);
         $this->assertEquals('Portugues',$Aula->materia);
         $this->assertEquals(1, $Aula->Pesquisar(tabela));
+        $this->assertIsCallable($Aula->Pesquisar(tabela));
 
     }
 }
