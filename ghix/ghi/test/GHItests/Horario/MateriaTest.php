@@ -1,6 +1,6 @@
 <?php
 
-namespace GHITest\Login;
+namespace GHItests\Horario;
 
 use PHPUnit\Framework\TestCase;
 use GHI\Horario\Materia;
@@ -19,8 +19,8 @@ class MateriaTest extends TestCase
         $Materia->nome = 'Portugues';
         
         $this->assertEquals('Portugues',$Materia->nome);
-        $this->assertEquals(1, $Materia->inserirnatabela(tabela));
-
+        $this->assertEquals(1, $Materia->inserirnatabela($tabela));
+        $this->assertIsString($Materia->nome);
 
 
     }
