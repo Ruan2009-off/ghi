@@ -1,6 +1,6 @@
 <?php
 
-namespace GHITest\Login;
+namespace GHItests\Main;
 
 use PHPUnit\Framework\TestCase;
 use GHI\Main\Registrador;
@@ -22,6 +22,7 @@ class Registradortest extends TestCase
         $this->assertEquals('11:15',$Funcionario->horariodechegada);
         $this->assertEquals('11:30',$Funcionario->horariodeinicio);
         $this->assertEquals(1, $Funcionario->registrarnatabela(tabela));
+        $this->assertIsNumeric($Funcionario->horariodechegada);
 
     }
 }
