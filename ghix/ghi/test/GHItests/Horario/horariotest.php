@@ -1,6 +1,6 @@
 <?php
 
-namespace GHITest\Login;
+namespace GHItests\Horario;
 
 use PHPUnit\Framework\TestCase;
 use GHI\Horario\horario;
@@ -21,6 +21,7 @@ class horariotest extends TestCase
         
         $this->assertEquals('11:45',$horario->horariodeinicio);
          $this->assertEquals('11:45',$horario->horariodefim);
+         $this->assertIsString($horario->horariodeinicio);
 
 
 
